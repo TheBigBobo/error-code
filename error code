@@ -1,0 +1,106 @@
+In file included from I:\My Documents\Arduino\DCSgeneric_attempt2.ino\DCSgeneric_attempt2.ino.ino:5:0:
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h: In function 'void DcsBios::USART_RX_vect()':
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:56:25: error: 'UDR0' was not declared in this scope
+    volatile uint8_t c = UDR0;
+                         ^~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:56:25: note: suggested alternative: 'UDR1'
+    volatile uint8_t c = UDR0;
+                         ^~~~
+                         UDR1
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h: In function 'void DcsBios::setup()':
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:62:4: error: 'UBRR0H' was not declared in this scope
+    UBRR0H = 0;
+    ^~~~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:62:4: note: suggested alternative: 'UBRR1H'
+    UBRR0H = 0;
+    ^~~~~~
+    UBRR1H
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:63:4: error: 'UBRR0L' was not declared in this scope
+    UBRR0L = 3; // 250000 bps
+    ^~~~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:63:4: note: suggested alternative: 'UBRR1L'
+    UBRR0L = 3; // 250000 bps
+    ^~~~~~
+    UBRR1L
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:64:4: error: 'UCSR0A' was not declared in this scope
+    UCSR0A = 0;
+    ^~~~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:64:4: note: suggested alternative: 'UCSR1A'
+    UCSR0A = 0;
+    ^~~~~~
+    UCSR1A
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:65:4: error: 'UCSR0C' was not declared in this scope
+    UCSR0C = (1<<UCSZ00) | (1<<UCSZ01);
+    ^~~~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:65:4: note: suggested alternative: 'UCSR1C'
+    UCSR0C = (1<<UCSZ00) | (1<<UCSZ01);
+    ^~~~~~
+    UCSR1C
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:65:17: error: 'UCSZ00' was not declared in this scope
+    UCSR0C = (1<<UCSZ00) | (1<<UCSZ01);
+                 ^~~~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:65:17: note: suggested alternative: 'UCSZ10'
+    UCSR0C = (1<<UCSZ00) | (1<<UCSZ01);
+                 ^~~~~~
+                 UCSZ10
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:65:31: error: 'UCSZ01' was not declared in this scope
+    UCSR0C = (1<<UCSZ00) | (1<<UCSZ01);
+                               ^~~~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:65:31: note: suggested alternative: 'UCSZ11'
+    UCSR0C = (1<<UCSZ00) | (1<<UCSZ01);
+                               ^~~~~~
+                               UCSZ11
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:67:4: error: 'UCSR0B' was not declared in this scope
+    UCSR0B = (1<<RXEN0) | (1<<TXEN0) | (1<<RXCIE0);
+    ^~~~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:67:4: note: suggested alternative: 'UCSR1B'
+    UCSR0B = (1<<RXEN0) | (1<<TXEN0) | (1<<RXCIE0);
+    ^~~~~~
+    UCSR1B
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:67:17: error: 'RXEN0' was not declared in this scope
+    UCSR0B = (1<<RXEN0) | (1<<TXEN0) | (1<<RXCIE0);
+                 ^~~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:67:17: note: suggested alternative: 'RXEN1'
+    UCSR0B = (1<<RXEN0) | (1<<TXEN0) | (1<<RXCIE0);
+                 ^~~~~
+                 RXEN1
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:67:30: error: 'TXEN0' was not declared in this scope
+    UCSR0B = (1<<RXEN0) | (1<<TXEN0) | (1<<RXCIE0);
+                              ^~~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:67:30: note: suggested alternative: 'TXEN1'
+    UCSR0B = (1<<RXEN0) | (1<<TXEN0) | (1<<RXCIE0);
+                              ^~~~~
+                              TXEN1
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:67:43: error: 'RXCIE0' was not declared in this scope
+    UCSR0B = (1<<RXEN0) | (1<<TXEN0) | (1<<RXCIE0);
+                                           ^~~~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:67:43: note: suggested alternative: 'RXCIE1'
+    UCSR0B = (1<<RXEN0) | (1<<TXEN0) | (1<<RXCIE0);
+                                           ^~~~~~
+                                           RXCIE1
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h: In function 'void DcsBios::usart_tx(const char*)':
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:82:13: error: 'UCSR0A' was not declared in this scope
+     while(!(UCSR0A & (1<<UDRE0))); // wait until TX buffer is empty
+             ^~~~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:82:13: note: suggested alternative: 'UCSR1A'
+     while(!(UCSR0A & (1<<UDRE0))); // wait until TX buffer is empty
+             ^~~~~~
+             UCSR1A
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:82:26: error: 'UDRE0' was not declared in this scope
+     while(!(UCSR0A & (1<<UDRE0))); // wait until TX buffer is empty
+                          ^~~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:82:26: note: suggested alternative: 'UDRE1'
+     while(!(UCSR0A & (1<<UDRE0))); // wait until TX buffer is empty
+                          ^~~~~
+                          UDRE1
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:83:5: error: 'UDR0' was not declared in this scope
+     UDR0 = *c++; // write byte to TX buffer
+     ^~~~
+i:\My Documents\Arduino\libraries\DCS-BIOS_FP-Fork\src/DcsBios.h:83:5: note: suggested alternative: 'UDR1'
+     UDR0 = *c++; // write byte to TX buffer
+     ^~~~
+     UDR1
+
+exit status 1
+
+Compilation error: exit status 1
